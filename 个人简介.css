@@ -1,0 +1,28 @@
+/* CSS Document */
+.container{
+	-webkit-box-reflect: below 1px -webkit-linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+h2{
+	color:#E5DDD7;
+	font-size:60px;
+	/*字间距*/
+	letter-spacing: 15px;
+		/*转大写*/
+	text-transform: uppercase;
+	text-align:center;
+	line-height: 76px;
+	outline:none;
+	--c:lightseagreen;
+	text-shadow: 0 0 10px var(--c),
+	0 0 20px var(--c),
+		0 0 40px var(--c),
+		0 0 80px var(--c),
+		0 0 160px var(--c);
+	animation: animate 5s linear infinite;
+}
+@keyframes animate{
+	to{
+		filter: hue-rotate(180deg);
+	}
+}
+
